@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div id="app">
+        <div id="dashboad">
+            <!-- heading -->
+            <a href="#" class="dashboad__header">
+                <i class="dashboad__icon fas fa-laugh-wink"></i>
+                <p class="dashboad__name">Admin Page</p>
+            </a>
+            
+
+            <!-- dashboad item  -->
+            <ul id="slidebar">
+                <li>
+                    <a href="#">
+                        <i class="slidebar__icon fas fa-microchip"></i>
+                        Thêm sản phẩm
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="slidebar__icon fas fa-user"></i>
+                        Thêm Nhân viên
+                    </a>
+                </li>
+              
+                <li>
+                    <a href="#">
+                        <i class="slidebar__icon fas fa-user"></i>
+                        Thêm Nhân viên
+                    </a>
+                </li>
+             
+                <!-- setting -->
+                <li >
+                    <a href="#" id="setting">
+                        <i class="slidebar__icon fas fa-cog"></i>
+                        Setting
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div id="content">
+            <!-- navigation -->
+            <ul id="nav">
+                <li>
+                    <i class="mobile-menu fas fa-bars"></i>
+                </li>
+                <li>
+                    <form action="" method="post" id="form-search">
+                        <div class="search-wrapper">
+                            <input type="text" name="search" placeholder="Search for" id="form-search__search">
+                            <button>
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <div class="nav__avatar">
+                        <i class="nav__avatar--noti fas fa-bell"></i>
+                        <p class="avatar__user-name">Le cong nam</p>
+                        <a href="#" class="nav__wrap-avt">
+                            <img src="./assets/image/avatar.png" alt="" class="avatar__img">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- form -->
+            <h1>Thêm sản phẩm mới</h1>
+            <div class="form-login">
+                <form action="#" method="post" id="form-product">
+                    <!-- Form Control -->
+                    <div class="form-control">
+                        <label for="name">Tên sản phẩm</label>
+                        <input type="text" name="name" id="name" placeholder="Tên sản phẩm">
+                    </div>
+                    <!-- Form Control -->
+                    <div class="form-control">
+                        <label for="brand">Hãng sản xuất</label>
+                        <input type="text" name="brand" id="brand" placeholder="Hãng sản xuất">
+                    </div>
+                    <!-- Form Control -->
+                    <div class="form-control">
+                        <label for="type">Loại</label>
+                        <input type="text" name="type" id="type" placeholder="Loại hàng hóa">
+                    </div>
+                    <!-- Form Control -->
+                    <div class="form-control">
+                        <label for="curr">Loại Tiền</label>
+                        <input type="text" name="curr" id="curr" placeholder="USD or VND">
+                    </div>
+                      <!-- Form Control -->
+                      <div class="form-control">
+                        <label for="price">Giá Sản Phẩm</label>
+                        <input type="text" name="price" id="price" placeholder="Giá Sản phẩm">
+                    </div>
+                    <!-- Form Control -->
+                    <div class="form-control">
+                        <label for="image">Hình ảnh sản phẩm</label>
+                        <input type="file" name="image" placeholder="Hình ảnh  sản phẩm" id="image">
+                    </div>
+                    <!-- Form Control -->
+                    <div class="form-control">
+                        <label for="desc">Tên sản phẩm</label>
+                        <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Mô tả sản phẩm....."></textarea>
+                    </div>
+
+                    <button type="submit">Lưu Sản phẩm</button>
+                    <button type="reset">Làm lại</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/javascript/main.js"></script>
+</body>
+</html>
